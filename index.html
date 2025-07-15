@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment App</title>
+    <link rel="preload" href="/Images/payments.webp" as="image" />
+    <link rel="preload" href="/Images/blue-yellow-cupboard.jpg" as="image" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container card my-5">
+      <div class="row">
+        <div
+          class="col-12 col-lg-6 donation-info text-white"
+        >
+          <header class="d-flex align-items-center gap-2 mb-4">
+            <div class="logo">
+              <a
+                href="https://recurring.myfundbox.com/OVP.jsf?orgid=1313&projectId=3696&projProdId=37401#"
+                ><img src="/Images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="brand-name fs-3 fw-bold">Skill Share</div>
+          </header>
+          <div class="cost-and-code">
+            <div class="banner-amount mb-3">
+              <div class="label fs-6">Donate</div>
+              <div class="amount fs-3 fw-bold">Rs:100</div>
+            </div>
+            <div class="amount-details row align-items-center">
+              <div class="label col-6">Donate</div>
+              <div class="amount col-6 d-flex justify-content-end">Rs:100</div>
+            </div>
+            <div class="promotion-code my-4">
+              <button class="btn btn-success" id="show-btn">
+                Add Promotion Code
+              </button>
+              <div class="input-group mb-3" id="apply" style="display: none">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+                <button
+                  class="btn btn-success"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="total-due">
+            <div class="row">
+              <div class="col-6 fs-6">Total due today</div>
+              <div class="col-6 d-flex justify-content-end fw-bold">Rs:100</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 payment-details">
+            <p class="fs-5 fw-semibold mb-2">Payment Methods</p>
+          <div class="payment-methods d-grid">
+            <div class="input-group">
+              <input type="radio" name="payments" id="Sofortuberweisung" />
+              <label for="Sofortuberweisung" class="Sofortuberweisung"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="Sepa" />
+              <label for="Sepa" class="Sepa"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="CardCollection" />
+              <label for="CardCollection" class="CardCollection"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="Ideal" />
+              <label for="Ideal" class="Ideal"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="EPS" />
+              <label for="EPS" class="EPS"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="paypal" />
+              <label for="paypal" class="paypal"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="alipay" />
+              <label for="alipay" class="alipay"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="wechat_pay" />
+              <label for="wechat_pay" class="wechat_pay"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="klarna" />
+              <label for="klarna" class="klarna"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="BankTransfer" />
+              <label for="BankTransfer" class="BankTransfer"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="gocardless" />
+              <label for="gocardless" class="gocardless"></label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payments" id="instantBankPay" />
+              <label for="instantBankPay" class="instantBankPay"></label>
+            </div>
+          </div>
+          <div
+            id="payment-image-container"
+            class="d-flex align-items-center justify-content-center gap-2 my-4"
+          >
+            <img
+              src="/Images/Sofortuberweisung.png"
+              alt="Sofortuberweisung"
+              style="max-width: 100%; width: 25px; height: auto"
+            /><span>Sofortuberweisung</span>
+          </div>
+          <div class="form-section">
+            <input 
+              type="text"
+              class="form-control mb-2"
+              id="formControlName"
+              placeholder="Name"
+             
+            />
+            <input
+              type="email"
+              class="form-control mb-2"
+              id="formControlEmail"
+              placeholder="E-mail"
+            />
+            <input
+              type="number"
+              class="form-control mb-2"
+              id="formControlPhone"
+              placeholder="Phone"
+            />
+          </div>
+          <p class="fs-5 fw-semibold mb-2">Billing Address</p>
+            <input
+              type="text"
+              class="form-control"
+              id="formControlAd1"
+              placeholder="Address Line 1"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="formControlAd2"
+              placeholder="Address Line 2"
+            />
+            <input
+              type="number"
+              class="form-control"
+              id="formControlPcode"
+              placeholder="Postal Code"
+              style="width: 49%; display:inline-block"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="formControlCity"
+              placeholder="city"
+               style="width: 49%; display:inline-block"
+            />
+              <input
+              type="text"
+              class="form-control"
+              id="formControlCountry"
+              placeholder="Country"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="formControlRegion"
+              placeholder="Region"
+            />
+            <div class="d-grid gap-2 col-6 mx-auto mt-5">
+             <button class="btn btn-success" id="show-btn">
+                PAY NOW
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

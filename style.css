@@ -1,0 +1,95 @@
+.donation-info {
+    background-image: url('./Images/blue-yellow-cupboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 50px;
+}
+
+.logo img{
+    width: 125px;
+    height: 125px;
+    border-radius:50%;
+}
+header{
+    padding:10px 0;
+}
+.payment-details{
+    padding:45px 50px;
+}
+.payment-methods{
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 3px;
+    row-gap: 13px;
+}
+.payment-methods label:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+.payment-methods input:checked + label{
+    filter: grayscale(0);
+}
+
+.payment-methods input{
+    display: none;
+}
+.payment-methods label{
+    background-image: url('/Images/payments.webp');
+    height: 75px;
+    width: 75px;
+    background-repeat: no-repeat;
+    filter:grayscale(1);
+}
+.payment-methods .Sofortuberweisung{
+   
+}
+
+.payment-methods .Sepa{
+   background-position: -81px 0px;
+    
+}
+.payment-methods .CardCollection{
+    background-position: -159px 0px;
+}
+.payment-methods .Ideal{
+    background-position: -237px 0px;
+}
+.payment-methods .EPS{
+     background-position: -319px  0px;
+}
+.payment-methods .paypal{
+    background-position: 0px  -80px;
+}
+.payment-methods .alipay{
+      background-position: -80px -80px;
+}
+.payment-methods .wechat_pay{
+    background-position: -160px -78px;
+}
+.payment-methods .klarna{
+    background-position: -240px -77px;
+}
+.payment-methods .BankTransfer{
+    background-position: -320px -77px;
+}
+.payment-methods .gocardless{
+    background-position: 0px  -160px;
+}
+.payment-methods .instantBankPay{
+    background-position: -80px  -160px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 767px)  {
+    .payment-methods{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
