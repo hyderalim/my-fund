@@ -43,7 +43,7 @@ document.querySelector('.payment-methods').addEventListener('change', (event)=>{
                 imagePath = 'Images/gocardless.png'
                 break;
             case 'instantBankPay':
-                imagePath = 'Images/instantBankPay.png'
+                imagePath = 'Images/InstantBankPay.png'
                 break;        
             default:
                 break;
