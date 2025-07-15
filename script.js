@@ -10,40 +10,40 @@ document.querySelector('.payment-methods').addEventListener('change', (event)=>{
 
         switch (selectedId) {
             case 'Sofortuberweisung':
-                imagePath = '/Images/Sofortuberweisung.png'
+                imagePath = 'Images/Sofortuberweisung.png'
                 break;
             case 'Sepa':
-                imagePath = '/Images/Sepa.png'
+                imagePath = 'Images/Sepa.png'
                 break;
             case 'CardCollection':
-                imagePath = '/Images/CardCollection.png'
+                imagePath = 'Images/CardCollection.png'
                 break;
             case 'Ideal':
-                imagePath = '/Images/Ideal.png'
+                imagePath = 'Images/Ideal.png'
                 break;
             case 'EPS':
-                imagePath = '/Images/EPS.png'
+                imagePath = 'Images/EPS.png'
                 break;
             case 'paypal':
-                imagePath = '/Images/paypal.png'
+                imagePath = 'Images/paypal.png'
                 break;
             case 'alipay':
-                imagePath = '/Images/alipay.png'
+                imagePath = 'Images/alipay.png'
                 break;
             case 'wechat_pay':
-                imagePath = '/Images/wechat_pay.png'
+                imagePath = 'Images/wechat_pay.png'
                 break;
             case 'klarna':
-                imagePath = '/Images/klarna.png'
+                imagePath = 'Images/klarna.png'
                 break;
             case 'BankTransfer':
-                imagePath = '/Images/BankTransfer.png'
+                imagePath = 'Images/BankTransfer.png'
                 break;
             case 'gocardless':
-                imagePath = '/Images/gocardless.png'
+                imagePath = 'Images/gocardless.png'
                 break;
             case 'instantBankPay':
-                imagePath = '/Images/instantBankPay.png'
+                imagePath = 'Images/instantBankPay.png'
                 break;        
             default:
                 break;
