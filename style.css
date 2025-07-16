@@ -102,5 +102,9 @@ input[type="number"] {
     .payment-methods{
         grid-template-columns: repeat(3, 1fr);
     }
+    .donation-info{
+    background-position: 0px -25px;
+    height: 545px;
+    }
     
 }
