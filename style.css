@@ -2,7 +2,7 @@
     position: relative;
     background-image: url('Images/banner.webp');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 105%;
     padding: 45px 50px;
     z-index: 2;
 }
